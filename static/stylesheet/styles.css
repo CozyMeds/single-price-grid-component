@@ -11,6 +11,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-weight: bold;
 }
 
 /*_*_*_* Colours *_*_*_*/
@@ -25,8 +27,8 @@
     --ligh-gray: hsl(204, 43%, 93%);
 	/* top paragraph */
     --grayish-blue: hsl(218, 22%, 67%);
-
-    font-family: 'Kumbh Sans', sans-serif;
+	--very-light-cyan: hsl(178,47%,72%);
+	color: #fff;
 }
 
 /*_*_*_* Body Styling *_*_*_*/
@@ -39,10 +41,14 @@ body {
 	background-color: var(--ligh-gray);
 }
 
+* > p {
+	font-weight: 400;
+} 
+
 /*_*_*_* Main Container Styling *_*_*_*/
 .container {
     display: grid;
-    grid-template: repeat(2, 14.844rem) / repeat(2, 19.844rem);
+    grid-template: 13.5rem 16.188rem / repeat(2, 19.844rem);
 
 	border-radius: 8px;
 	overflow: hidden;
@@ -50,6 +56,7 @@ body {
 	filter: drop-shadow(0 15px 30px rgba(0, 81, 171, .15));
 }
 
+/*_*_*_* Top Card Styling *_*_*_*/
 .top_card {
 	grid-column: span 2;
 	background-color: #fff;
@@ -57,7 +64,6 @@ body {
 
 .top_card > h1 {
 	font-size: 24px;
-	font-weight: 700;
 	letter-spacing: -0.3px;
 	color: var(--cyan);
 
@@ -67,7 +73,6 @@ body {
 
 .top_card > h2 {
 	font-size: 18px;
-	font-weight: 700;
 	letter-spacing: -0.22px;
 	color: var(--bright-yellow);
 
@@ -85,8 +90,76 @@ body {
 	margin: 11px 0 0 40px;
 }
 
+
+/*_*_*_* Bottom Left Styling *_*_*_*/
+.bot_left_card > * {
+	margin-left: 40px;
+}
+
 .bot_left_card {
 	background-color: var(--cyan);
+}
+
+.bot_left_card > h3 {
+	font-size: 18px;
+	letter-spacing: -0.22px;
+
+	margin-top: 40px;
+}
+
+.bot_left_card > .price {
+	display: flex;
+	width: 147px;
+	height: 35px;
+
+	margin-top: 18px;
+}
+
+.bot_left_card > .price > h3 {
+	font-size: 32px;
+	letter-spacing: -0.4px;
+}
+
+.bot_left_card > .price > p {
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: -0.2px;
+	color: var(--very-light-cyan);
+
+	margin: 4.625px 0 0 11px;
+}
+
+.bot_left_card > p {
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: -0.2px;
+	
+	width: 240px;
+	margin-top: 4px;
+}
+
+.bot_left_card > button {
+	width: 14.813rem;
+	height: 3rem;
+
+	border-radius: 0.313rem;
+	border: none;
+
+	background-color: var(--bright-yellow);
+	
+	font-size: 1em;
+	letter-spacing: 0.013em;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+
+	margin-top: 1.625rem;
+
+	filter: drop-shadow(0 10px 10px rgba(0, 0, 0, .1));
+}
+
+.bot_left_card > button:hover {
+	cursor: pointer;
 }
 
 .bot_right_card {
