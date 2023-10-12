@@ -11,7 +11,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-	font-family: 'Kumbh Sans', sans-serif;
+	font-family: 'Karla', sans-serif;
 	font-weight: bold;
 }
 
@@ -28,6 +28,7 @@
 	/* top paragraph */
     --grayish-blue: hsl(218, 22%, 67%);
 	--very-light-cyan: hsl(178,47%,72%);
+	--extra-light-cyan: hsl(178,48%,88%);
 	color: #fff;
 }
 
@@ -91,7 +92,7 @@ body {
 }
 
 
-/*_*_*_* Bottom Left Styling *_*_*_*/
+/*_*_*_* Bottom Left Card Styling *_*_*_*/
 .bot_left_card > * {
 	margin-left: 40px;
 }
@@ -162,6 +163,29 @@ body {
 	cursor: pointer;
 }
 
+
+/*_*_*_* Bottom Right Card Styling *_*_*_*/
 .bot_right_card {
 	background-color: var(--light-cyan);
+}
+
+.bot_right_card > h3 {
+	font-size: 18px;
+	letter-spacing: -0.22px;
+
+	margin: 2.5rem 0 0 2.5rem;
+}
+
+.bot_right_card > p {
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: -0.17px;
+
+	width: 238px;
+	height: 140px;
+
+	white-space: pre-line;
+
+	margin: 0 0 40px 40px;
+	color: var(--extra-light-cyan);
 }
