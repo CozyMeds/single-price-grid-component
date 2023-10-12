@@ -1,0 +1,24 @@
+/*_*_*_* Fonts *_*_*_*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*          HOW TO USE
+    font-family: 'Karla', sans-serif;
+*/
+
+/*_*_*_* Reset *_*_*_*/
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*_*_*_* Colours *_*_*_*/
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --ligh-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+
+    font-family: 'Kumbh Sans', sans-serif;
+}
