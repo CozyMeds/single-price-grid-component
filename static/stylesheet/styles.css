@@ -189,3 +189,63 @@ body {
 	margin: 0 0 40px 40px;
 	color: var(--extra-light-cyan);
 }
+
+/*_*_*_* Media Queries Mobile Styling *_*_*_*/
+@media screen and (max-width: 45.625rem) {
+	.container {
+		grid-template: 267px repeat(2, 227px) / 311px 0;
+	}
+
+	div.top_card > *,
+	div.bot_left_card > *,
+	div.bot_right_card > * {
+		margin-left: 24px;
+	}
+	
+	/*_*_*_* Top Card Styling *_*_*_*/
+	.top_card > h1 {
+		font-size: 20px;
+		letter-spacing: -0.25px;
+	
+		margin-top: 28px;
+		width: 263px;
+	}
+	
+	.top_card > h2 {
+		font-size: 15px;
+		letter-spacing: -0.19px;
+	
+		margin-top: 24px;
+		width: 263px;
+	}
+	
+	.top_card > p {
+		font-size: 14px;
+		letter-spacing: -0.17px;
+		line-height: 26px;
+	
+		width: 263px;
+		margin-top: 16px;
+	}
+
+
+	/*_*_*_* Bottom Left Card Styling *_*_*_*/	
+	.bot_left_card > h3 {
+		margin-top: 24px;
+	}
+	
+	.bot_left_card > button {
+		width: 263px;
+		height: 48px; 
+	}
+
+
+	/*_*_*_* Bottom Right Card Styling *_*_*_*/	
+	.bot_right_card {
+		grid-row: 3 / 4;
+	}
+	
+	.bot_right_card > h3 {
+		margin-top: 1.5rem;
+	}
+}
